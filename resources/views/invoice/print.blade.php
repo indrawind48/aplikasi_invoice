@@ -49,7 +49,7 @@
     <div class="container">
         <table>
             <caption>
-                Daengweb Invoice App
+                Invoice
             </caption>
             <thead>
                 <tr>
@@ -59,10 +59,10 @@
                 <tr>
                     <td colspan="2">
                         <h4>Perusahaan: </h4>
-                        <p>Daengweb.<br>
-                            Jl Sultan Hasanuddin Makassar<br>
-                            085343966997<br>
-                            support@daengweb.id
+                        <p>Crypietech.<br>
+                            Jl Tanjung Raya 2<br>
+                            08XXXXXXXX<br>
+                            support@crypietech.id
                         </p>
                     </td>
                     <td colspan="2">

@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container">
+    <div class="container mt-3">
         <div class="row">
             <div class="col-md-12">
                 <div class="card">
@@ -35,7 +35,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="">Email</label>
-                                <input type="number" name="email" class="form-control {{ $errors->has('email') ? 'is-invalid':'' }}" value="{{ $customer->email }}" readonly>
+                                <input type="text" name="email" class="form-control {{ $errors->has('email') ? 'is-invalid':'' }}" value="{{ $customer->email }}" readonly>
                                 <p class="text-danger">{{ $errors->first('email') }}</p>
                             </div>
                             <div class="form-group">

@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container">
+    <div class="container mt-3">
         <div class="row">
             <div class="col-md-12">
                 <div class="card">
@@ -21,9 +21,10 @@
                                 {!! session('success') !!}
                             </div>
                         @endif
-                        <table class="table table-hover table-bordered">
+                        <table class="table table-hover table-bordered table-responsive{-sm|-md|-lg|-xl}">
                             <thead>
                                 <tr>
+                                    <th>No</th>
                                     <th>Nama Lengkap</th>
                                     <th>No Telp</th>
                                     <th>Alamat</th>
@@ -34,6 +35,7 @@
                             <tbody>
                                 @forelse($customers as $customer)
                                 <tr>
+                                    <td>{{$loop->iteration}}</td>
                                     <td>{{ $customer->name }}</td>
                                     <td>{{ $customer->phone }}</td>
                                     <td>{{ str_limit($customer->address, 50) }}</td>
